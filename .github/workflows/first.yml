@@ -10,7 +10,10 @@ jobs:
     - name: Step one
       uses: actions/checkout@v2
     - name: Step two
-      run: env | sort
+      run: |
+        git branch
+        echo "new file > newFile.txt"
+        git status
 
   job2:
     name: windows job
