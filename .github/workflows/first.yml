@@ -15,7 +15,7 @@ jobs:
         git config --global user.name "Alan Cole"
         git branch
         touch newFile.txt
-        echo "new file > newFile.txt"
+        "echo new file > newFile.txt"
         git add .
         git commit -m "adding newFile.txt"
         git push origin $GITHUB_REF
