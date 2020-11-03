@@ -11,6 +11,8 @@ jobs:
       uses: actions/checkout@v2
     - name: Step two
       run: |
+        git config --global user.email "alantuneit@gmail.com"
+        git config --global user.name "Alan Cole"
         git branch
         echo "new file > newFile.txt"
         git add .
