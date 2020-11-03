@@ -3,15 +3,17 @@ name: hello
 on: [push]
 
 jobs:
-  build:
+  say-hello:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: echo Hello, world!
+      run: echo Hello, world! (from a single line run command)
     - name: Run a multi-line script
       run: |
+        echo (Following are multiline commands)
         echo Add other actions to build,
         echo test, and deploy your project.
+        echo I can write to a file > newFile.txt
